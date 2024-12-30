@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-violet-50 via-white to-cyan-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-violet-600 text-2xl font-bold" aria-label="Home">Aravind M</a>
+      
+      <!-- Menu -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="text-gray-600 hover:text-violet-600 transition">About Me</a>
+        <a href="#resume" class="text-gray-600 hover:text-violet-600 transition">Resume</a>
+        <a href="#services" class="text-gray-600 hover:text-violet-600 transition">Services</a>
+        <a href="#blogs" class="text-gray-600 hover:text-violet-600 transition">Blogs</a>
+        <a href="#contact" class="text-gray-600 hover:text-violet-600 transition">Contact</a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menu-button" class="md:hidden focus:outline-none">
+        <i class="fa-solid fa-bars fa-xl" style="color: #B197FC;"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="#about" class="block px-6 py-3 text-gray-600 hover:bg-violet-50 hover:text-violet-600">About Me</a>
+      <a href="#resume" class="block px-6 py-3 text-gray-600 hover:bg-violet-50 hover:text-violet-600">Resume</a>
+      <a href="#services" class="block px-6 py-3 text-gray-600 hover:bg-violet-50 hover:text-violet-600">Services</a>
+      <a href="#blogs" class="block px-6 py-3 text-gray-600 hover:bg-violet-50 hover:text-violet-600">Blogs</a>
+      <a href="#contact" class="block px-6 py-3 text-gray-600 hover:bg-violet-50 hover:text-violet-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="pt-20 lg:pt-24 min-h-screen">
+    <div class="flex flex-col lg:flex-row">
+      <!-- Sidebar -->
+      <aside class="bg-white shadow-lg p-8 w-full lg:w-1/3">
+        <div class="text-center">
+          <!-- Profile Picture -->
+          <img src="./WhatsApp Image 2024-11-06 at 20.55.06_55604009.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h2 class="text-2xl font-bold text-gray-800">Aravind M</h2>
+          <p class="text-gray-500">Mearn Stack Developer</p>
+          <!-- Social Media Links -->
+          <div class="flex justify-center mt-4 space-x-4">
+            <a href="https://youtube.com"> <i class="fa-brands fa-facebook fa-2xl" style="color: #B197FC;"></i></a>
+            <a href="https://www.linkedin.com/in/aravind-m-7545222ba"><i class="fa-brands fa-linkedin fa-2xl" style="color: #B197FC;"></i></a>
+            <a href="https://github.com/Aravind-M23997"><i class="fa-brands fa-github fa-2xl" style="color: #B197FC;"></i></a>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="mt-8">
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span class="text-violet-600 material-icons">Phone:</span>
+              <span class="ml-4 text-gray-600">+7875889759</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-violet-600 material-icons">Location:</span>
+              <span class="ml-4 text-gray-600">Thrissur, Kerala, India</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-violet-600 material-icons">Gmail: </span>
+              <span class="ml-4 text-gray-600">sukunan@gmail.com</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-violet-600 material-icons">DOB:</span>
+              <span class="ml-4 text-gray-600">May 2, 2003</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Download CV Button -->
+        <div id="resume" class="mt-8 text-center">
+          <a href="./blue professional modern CV resume.pdf" class="bg-violet-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-violet-700 transition">
+            Download CV
+          </a>
+        </div>
+      </aside>
+
+           <!-- Main Content -->
+      <main class="flex-1 p-8">
+        <!-- About Me Section -->
+        <section id="about" class="mb-16">
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">About Me</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Hey therel I'm Aravind M, a MEAN stack developer at Luminar Technolabs. I'm all about building cool web apps. I love learning new tech and solving problems with code. In my free time, I dive into new frameworks and help out on open-source projects. I'm excited to connect with other tech folks and keep leveling up my skills.          </p>
+          <p class="text-gray-600 leading-relaxed mt-4">
+            My aim is to bring across your message and identity in the most creative way. I have created web designs for many renowned companies.
+          </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-16">
+          <h3 class="text-3xl font-bold text-gray-800 mb-8">What I Do!</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Service Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h4 class="text-xl font-bold text-violet-600 mb-2">UI/UX Design</h4>
+              <p class="text-gray-600">A worthy opponent for your competition in terms of desgins</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h4 class="text-xl font-bold text-yellow-600 mb-2">App Development</h4>
+              <p class="text-gray-600">I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy building user-friendly and responsive websites that are both visually appealing and functionally robust.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h4 class="text-xl font-bold text-blue-600 mb-2">Ideas</h4>
+              <p class="text-gray-600">I thrive on the challenge of translating ideas into engaging online experiences. I'm passionate about crafting intuitive website designs that captivate audiences and drive results.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <h4 class="text-xl font-bold text-pink-600 mb-2">Publishing</h4>
+              <p class="text-gray-600">A well executed publishing and presenting to make your valuable customers and dealers yours!</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-violet-600 text-white mt-16">
+    <div class="container mx-auto px-6 py-6 text-center">
+      <p>&copy; 2024 Portfolio. All rights reserved.</p>
+      <p class="mt-2">Copy adicha rathri urumb kadikum</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
